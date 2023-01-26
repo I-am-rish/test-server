@@ -12,8 +12,9 @@ app.get('/user', (req, res) => {
     res.send('hello user');
 })
 app.get('/ak', (req, res) => {
-    console.log(res.body);
     res.send('hello ak');
 })
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log('server running');
+});
